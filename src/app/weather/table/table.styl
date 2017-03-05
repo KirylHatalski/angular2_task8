@@ -1,0 +1,70 @@
+.table-main
+  min-height: 56px
+  width: 666px
+  display: block
+  color: #fff
+  margin: 0 auto
+  position: relative
+  z-index: 1
+  padding: 0 30px
+  background: linear-gradient(left, rgba(0,0,0,0), 2% rgba(0,0,0,0.6), 98% rgba(0,0,0,0.6), rgba(0, 0, 0, 0))
+  transition: height 300ms ease
+
+.table-toggler
+  text-align: justify
+  position: relative
+
+  &:after
+    display: inline-block
+    content: ''
+    width: 100%
+
+
+.table-info
+.table-label
+  display: inline-block
+
+.table-info
+  max-width: 70%
+  text-align: left
+
+.add-item
+  absolute: right 0px top 30px
+  border: none
+  outline: none
+  background: transparent
+  color: #fff
+  font-size: 1em
+  cursor: pointer
+  height: 30px
+  border-radius: 4px
+  width: 160px
+  &:hover
+    background: rgba(255, 153, 0, 0.35)
+
+.table-label
+  background: rgba(255, 153, 0, 0.65)
+  border-radius: 5px
+  height: 30px
+  width: 150px
+  padding: 5px
+  line-height: 30px
+  cursor: pointer
+
+  &.active
+    &:after
+      background: rgba(0, 255, 0, 0.65)
+  span
+    vertical-align: middle
+
+  &:after
+    content: ""
+    display: inline-block
+    border-radius: 50%
+    vertical-align: middle
+    width: 30px
+    height: 30px
+    background: rgba(255, 0, 0, 0.65)
+
+#table-id
+  display: none

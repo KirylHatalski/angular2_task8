@@ -1,0 +1,7 @@
+<router-outlet></router-outlet>
+<div class="routes">
+  <a (click)='gotoRoute("")'>View all</a>
+  <a *ngFor='let link of links' (click)='gotoRoute(link)'>| View {{link}}</a>
+  <!-- <a routerLink="/map" class="map-view">View map</a>
+  <a routerLink="/table" class="table-view">View table</a> -->
+</div>

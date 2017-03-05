@@ -1,0 +1,53 @@
+.table-content
+  width 100%
+  text-align center
+  vertical-align middle
+
+  tablerow
+    display table-row
+    vertical-align middle
+    border-color inherit
+
+    &:first-child
+      text-align left
+
+  .favorite
+    color rgb(254, 236, 0)
+    width 32px
+    &.unfav
+      color rgba(0,0,0,0.6)
+    i
+      cursor pointer
+      font-style normal
+      font-size 30px;
+
+  .remove
+    font-size 2em
+
+  td:first-child
+    text-align left
+  .options
+    color #fff
+    cursor pointer
+    padding-right 5px
+  .active
+    color rgb(66, 0, 255)
+  .compass
+    position relative
+    .nord
+      font-size 10px
+      color #1706ff
+      right 50%
+      top 0
+      transform translateX(50%)
+    .power
+      color rgba(245, 245, 245, 0.67)
+      strong
+        font-size 1.8em
+    &>div
+      position absolute
+      transform translateY(-50%)
+    .direction
+      color #f00
+      font-size 45px
+      absolute: top 0px left -9px
